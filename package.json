@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@heroicons/react": "^2.1.5",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^10.18.0",
@@ -20,7 +21,7 @@
     "react-type-animation": "^3.2.0",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.5",
-    "sweetalert2": "^11.10.3"
+    "sweetalert2": "^11.6.13"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

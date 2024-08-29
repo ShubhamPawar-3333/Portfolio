@@ -1,38 +1,10 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
 import 'semantic-ui-css/semantic.min.css';
-import Swal from 'sweetalert2';
-import BG from '../../assets/contact-background.jpg'
 import { HiOutlinePhone } from "react-icons/hi2"
 import { MdOutlineAttachEmail, MdOutlineLocationOn } from "react-icons/md"
-import { motion } from 'framer-motion';
-
-
-const SERVICE_ID = "service_huixyf9";
-const TEMPLATE_ID = "template_fgf6e6q";
-const PUBLIC_KEY = "9u-Bt1K7nkYOLao8f";
+import { motion } from 'framer-motion'
 
 const ContactSection = () => {
-  const handleOnSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
-      .then((result) => {
-        console.log(result.text);
-        Swal.fire({
-          icon: 'success',
-          title: 'Message Sent Successfully'
-        });
-      }, (error) => {
-        console.log(error.text);
-        Swal.fire({
-          icon: 'error',
-          title: 'Ooops, something went wrong',
-          text: error.text,
-        });
-      });
-    e.target.reset();
-  };
-
   return (
     <div id='contact' className='flex items-center justify-center'>
         <div className='w-full min-h-screen bg-center bg-cover' style={{backgroundImage: "url(src/assets/contact-background.jpg)"}}>
@@ -77,10 +49,10 @@ const ContactSection = () => {
                     </address> 
                   </div>
                 <div className='md:col-span-2 mt-0 p-2 m-8 md:m-0 md:p-4'>
-                  <form onSubmit={handleOnSubmit} method="post" encType='multipart/form-data'>
+                  <form action='https://formspree.io/f/xblrwqjo' method="post" encType='multipart/form-data'>
                     <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                       <div className='flex flex-col'>
-                        <label for='fullname' className='sr-only'>Full Name</label>
+                        <label htmlFor='fullname' className='sr-only'>Full Name</label>
                         <input
                           id='fullname'
                           type="text"
@@ -89,7 +61,7 @@ const ContactSection = () => {
                           className='form-style'/>
                       </div>
                       <div className='flex flex-col'>
-                        <label for='mobileno' className='sr-only'>Mobile Number</label>
+                        <label htmlFor='mobileno' className='sr-only'>Mobile Number</label>
                         <input
                           id='mobileno'
                           type="text"
@@ -99,7 +71,7 @@ const ContactSection = () => {
                       </div>
                     </div>
                     <div className='flex flex-col py-2'>
-                        <label for='email' className='sr-only'>E-mail Address</label>
+                        <label htmlFor='email' className='sr-only'>E-mail Address</label>
                         <input 
                           id='email'
                           name='email'
@@ -108,7 +80,7 @@ const ContactSection = () => {
                           className='form-style'/>
                     </div>
                     <div className='flex flex-col py-2'>
-                        <label for='subject' className='sr-only'>E-mail Subject</label>
+                        <label htmlFor='subject' className='sr-only'>E-mail Subject</label>
                         <input
                           id='subject'
                           type="subject"
@@ -117,7 +89,7 @@ const ContactSection = () => {
                           className='form-style'/>
                     </div>
                     <div className='flex flex-col py-2'>
-                        <label for='message' className='sr-only'>Message</label>
+                        <label htmlFor='message' className='sr-only'>Message</label>
                         <textarea
                           id='message'
                           name="message"

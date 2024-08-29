@@ -16,8 +16,8 @@ const SkillCard = ({title, tools}) => {
                         text-center text-xl font-bold
                         rounded-xl ">
                 <ul className="flex flex-wrap space-x-3 space-y-3 items-center justify-evenly">
-                    {tools.map((item) =>(
-                        <li className="h-12 w-12">
+                    {tools.map((item, index) =>(
+                        <li className="h-12 w-12" key={index}>
                             {item}
                         </li>
                     ))}

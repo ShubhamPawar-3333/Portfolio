@@ -29,7 +29,7 @@ const Workitems = ({year, title, duration, company, details}) => {
               <span className='text-lg font-semibold text-[#001b5e]'>{title} - {company}</span>
               <span className='my-1 text-sm font-normal leading-none text-stone-400'>{duration}</span>
             </p>
-            <p className='my-2 text-base font-normal text-stone-600'>
+            <div className='my-2 text-base font-normal text-stone-600'>
                 <ul className="list-disc pl-5">
                   {details_list.map((item, index) => (
                     <li key={index} className="mb-1">
@@ -37,7 +37,7 @@ const Workitems = ({year, title, duration, company, details}) => {
                     </li>
                   ))}
                 </ul>
-            </p>
+            </div>
         </li>
       </ol>
     </div>

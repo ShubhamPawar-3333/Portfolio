@@ -1,11 +1,12 @@
 import React from 'react';
 import { TypeAnimation  } from 'react-type-animation';
 import { FaLinkedin, FaGithub, FaSquareXTwitter } from 'react-icons/fa6'
+import HeroBG from "../../assets/safar-safarov-MSN8TFhJ0is-unsplash.jpg"
 
 const Main = () => {
   return (
     <div id='main'>
-        <img className='w-full h-screen object-cover' src="public\safar-safarov-MSN8TFhJ0is-unsplash.jpg" alt="home-img" />
+        <img className='w-full h-screen object-cover' src={HeroBG} alt="home-img" />
         <div className='w-full h-screen absolute top-0 left-0 bg-white/50'>
             <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center'>
                 <h1 className='sm:text-5xl text-4xl font-bold text-gray-800'>Hi! I'm Shubham</h1>
