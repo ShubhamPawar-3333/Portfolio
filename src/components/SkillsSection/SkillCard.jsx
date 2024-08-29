@@ -1,21 +1,30 @@
-import React from 'react'
-import { motion } from "framer-motion"
+import React from "react"
 
-const SkillCard = ({title, skills}) => {
-  return (
-    <motion.div className='flex flex-col justify-between items-center max-h-[85%] min-w-[100%] rounded-xl p-4'>
-        <div className='text-center w-[50%] h-[15%] py-3 font-bold shadow-xl shadow-gray-500 text-white bg-[#001b5e] rounded-full z-10'>
-            <p>{title}</p>
+const SkillCard = ({title, tools}) => {
+    return (
+        <div className="flex flex-col md:flex-row items-center p-2">
+            <div 
+                className="flex items-center justify-around
+                        w-[75%] md:w-[25%] p-6
+                        font-bold text-center text-xl text-[#001b5e]
+                        rounded-xl border-gray-400 focus:ring-0 focus:border-gray-400 shadow-xl border">
+                {title}
+            </div>
+            <div
+                className="flex items-center justify-around
+                        w-full md:w-[70%] mx-auto p-4
+                        text-center text-xl font-bold
+                        rounded-xl ">
+                <ul className="flex flex-wrap space-x-3 space-y-3 items-center justify-evenly">
+                    {tools.map((item) =>(
+                        <li className="h-12 w-12">
+                            {item}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
-        <div className='flex items-center justify-around w-[90%] h-[90%]'>
-            <ul>
-            {skills.map((item) =>(
-                <li className='flex items-center justify-center p-2' key={item}>{item}</li>
-                ))}
-            </ul>
-        </div>    
-    </motion.div>
-  )
+    )
 }
 
 export default SkillCard

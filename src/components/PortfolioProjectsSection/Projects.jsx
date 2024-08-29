@@ -186,7 +186,7 @@ const Projects = () => {
     : projectList.filter((project) => project.category === selectedCategory);
 
   return (
-    <div id="projects" className="flex flex-col items-center justify-center min-h-screen max-w-[1040px] mx-auto p-4 py-5">
+    <div id="projects" className="flex flex-col items-center justify-center min-h-screen max-w-[1040px] m-auto md:pl-20 p-4 py-5">
       <div className="space-y-5 text-center mx-auto leading-6 p-4">
         <h1 className="text-4xl font-bold text-center text-[#001b5e] p-2">Project Gallery</h1>
         <div className="w-14 mx-auto h-0.5 bg-red-500"></div>

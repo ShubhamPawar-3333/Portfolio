@@ -17,9 +17,9 @@ const data = [
 ]
 const Work = () => {
   return (
-    <div className='grid place-items-center w-full h-auto'>
-        <h1 className='text-center w-[50%] py-3 font-bold shadow-xl shadow-gray-500 text-white bg-[#001b5e] rounded-full z-10'>Experience</h1>
-        <div className='py-8'>
+    <div className='flex flex-col items-center justify-evenly w-full h-auto'>
+        <h1 className='text-center w-[50%] py-3 my-10 font-bold shadow-xl shadow-gray-500 text-white bg-[#001b5e] rounded-full z-10'>Experience</h1>
+        <div>
           {data.map((item, idx) =>(
               <Workitems 
                   key={idx}
