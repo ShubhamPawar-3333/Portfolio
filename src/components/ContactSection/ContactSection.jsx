@@ -1,10 +1,34 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import { HiOutlinePhone } from "react-icons/hi2"
 import { MdOutlineAttachEmail, MdOutlineLocationOn } from "react-icons/md"
 import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'
+
+
 
 const ContactSection = () => {
+  const form = useRef();
+  const [popupMessage, setPopupMessage] = useState(null);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_muinugd', 'template_bqzb28k', form.current, {
+        publicKey: 'Kne8DGucQmnJ2iijV',
+      })
+      .then(
+        () => {
+          setPopupMessage({ type: 'success', text: 'Message sent successfully!' });
+          form.current.reset();
+        },
+        (error) => {
+          setPopupMessage({ type: 'error', text: `Failed to send message: ${error.text}` });
+        },
+      )
+    }
+
   return (
     <div id='contact' className='flex items-center justify-center'>
         <div className='w-full min-h-screen bg-center bg-cover' style={{backgroundImage: "url(src/assets/contact-background.jpg)"}}>
@@ -49,7 +73,7 @@ const ContactSection = () => {
                     </address> 
                   </div>
                 <div className='md:col-span-2 mt-0 p-2 m-8 md:m-0 md:p-4'>
-                  <form action='https://formspree.io/f/xblrwqjo' method="post" encType='multipart/form-data'>
+                  <form ref={form} onSubmit={sendEmail}>
                     <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                       <div className='flex flex-col'>
                         <label htmlFor='fullname' className='sr-only'>Full Name</label>
@@ -113,6 +137,22 @@ const ContactSection = () => {
               </div>
             </div>
         </div>
+        {/* Popup */}
+      {popupMessage && (
+        <div className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black/50'>
+          <div className={`bg-white p-6 rounded-lg shadow-lg ${popupMessage.type === 'success' ? 'border-green-500' : 'border-red-500'}`}>
+            <h2 className={`text-xl font-bold ${popupMessage.type === 'success' ? 'text-green-600' : 'text-red-600'}`}>
+              {popupMessage.type === 'success' ? 'Success' : 'Error'}
+            </h2>
+            <p className='text-gray-700'>{popupMessage.text}</p>
+            <button
+              onClick={() => setPopupMessage(null)}
+              className='mt-4 px-4 py-2 bg-[#001b5e] text-white rounded-lg'>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
