@@ -3,17 +3,32 @@ import Workitems from './Workitems'
 
 const data = [
     {   
-        year: "2021 - 2023",
+        year: "Jul-21 - Jul-23",
         title: 'DevOps Engineer',
-        duration: '2 Years',
+        duration: '2 Year',
         company: "Capgemini",
         details:
         [
-          "Orchestrated the development of a predictive analytics model for ticket resolution times, resulting in a 20% reduction in the average time taken to resolve tickets.",
-          "Demonstrated adeptness in machine learning technologies by leveraging Python and scikit-learn for model development, contributing to a 15% increase in the accuracy of ticket resolution predictions.",
-          "Applied advanced data preprocessing techniques, leading to a 25% improvement in the overall efficiency of ticket resolution processes, enhancing the organization’s responsiveness to customer needs."
-        ]
-    }
+          "Managed AWS infrastructure using Terraform, automating the provisioning of EC2 instances, S3 buckets, and IAM roles to streamline deployments.",
+          "Built and automated CI/CD pipelines with Jenkins, Dockerized application services, and deployed containers using Kubernetes for seamless scaling and availability.",
+          "Standardized deployments with Helm and configured Kubernetes Volumes for persistent storage, ensuring data integrity and simplified updates.",
+          "Monitored system health with Prometheus and Grafana, creating real-time dashboards and setting up AWS CloudWatch with SNS alerts for proactive issue resolution.",
+          "Documented CI/CD workflows, deployment processes, and infrastructure configurations to simplify troubleshooting and improve knowledge transfer.",
+      ]
+    },
+    // {   
+    //     year: "Jul-21 - Dec-21",
+    //     title: 'Linux Administrator',
+    //     duration: '6 Months',
+    //     company: "Capgemini",
+    //     details:
+    //     [
+    //       "Managed and configured Linux VMs and containers, ensuring timely resolution of OS-related incidents with 95% ticket resolution efficiency.",
+    //       "Collaborated with cross-functional teams, leading to a 20% reduction in issue resolution time.",
+    //       "Proficient in Linux server management (RHEL), file systems (LVM, NFS), and storage, ensuring consistent system performance and compliance.",
+    //       "Automated tasks using Bash and YAML scripting, utilizing cron jobs to enhance efficiency and streamline operations."
+    //     ]
+    // },
 ]
 const Work = () => {
   return (
