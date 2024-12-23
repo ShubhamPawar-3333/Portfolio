@@ -15,17 +15,13 @@ const Main = () => {
                     sequence={[
                         // Same substring at the start will only be typed out once, initially
                         // wait 1s before replacing "Mice" with "Hamsters"
-                        'Coder',
-                        1000,
-                        'Machine Learning Enthusiast',
-                        1000,
-                        'Data Science Explorer',
-                        1000,
-                        'DevOps Engineer',
-                        1000
+                        'DevOps Engineer  ',
+                        3000,
+                        'Tech Enthusiast  ',
+                        3000
                     ]}
                     wrapper="div"
-                    speed={50}
+                    speed={30}
                     style={{ fontSize: '1em', paddingLeft:'5px' }}
                     repeat={Infinity}
                     />
