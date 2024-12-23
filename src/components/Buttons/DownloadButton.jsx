@@ -1,7 +1,7 @@
 import React from "react"
 import { motion } from 'framer-motion'
 
-const fileId = '1kNmnVgImciCE0-aZL53cueQ0t3KK4BKt';
+const fileId = '1QCVLrJqvhzxIz0KKOkXHdDwc3-yLgUdU';
 const fileUrl = `https://drive.google.com/uc?id=${fileId}&export=download`;
 
 const DownloadButton = () => {
@@ -9,7 +9,7 @@ const DownloadButton = () => {
     const handleClick = () => {
         const link = document.createElement('a');
         link.href = fileUrl;
-        link.download = 'Resume-Shubham_Pawar.pdf';
+        link.download = 'Resume-Shubham_Pawar(DevOps Engineer).pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
