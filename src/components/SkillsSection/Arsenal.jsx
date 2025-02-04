@@ -1,37 +1,87 @@
 import React from "react"
 import SkillCard from "./SkillCard"
-import KubernetesIcon from "../../assets/SVG's/kubernetes-icon.svg"
-import DockerIcon from "../../assets/SVG's/docker-logo-svgrepo-com.svg"
-import AnsibleIcon from "../../assets/SVG's/ansible-svgrepo-com.svg"
-import AWSIcon from "../../assets/SVG's/aws-2.svg"
-import JenkinsIcon from "../../assets/SVG's/jenkins-svgrepo-com.svg"
-import TerraformIcon from "../../assets/SVG's/terraform-icon-svgrepo-com.svg"
-import MavenIcon from "../../assets/SVG's/maven-svgrepo-com.svg"
-import AmazonEKSIcon from "../../assets/SVG's/amazon-eks-svgrepo-com.svg"
-import JFrogIcon from "../../assets/SVG's/jfrog-svgrepo-com.svg"
+// Programming
 import PythonIcon from "../../assets/SVG's/python-svgrepo-com.svg"
 import JavaIcon from "../../assets/SVG's/java-4-logo-svgrepo-com.svg"
+// Version-control
+import GitIcon from "../../assets/SVG's/git-icon.svg"
+import GitHubIcon from "../../assets/SVG's/github-icon.svg"
+// CI-CD Automation
+import JenkinsIcon from "../../assets/SVG's/jenkins.svg"
+import GitHubActionsIcon from "../../assets/SVG's/gitHub-actions-icon.svg"
+import GitLabIcon from "../../assets/SVG's/gitlab-icon.svg"
+import ArgoCDIcon from "../../assets/SVG's/Argo-CD-icon.svg"
+//Containerisation and Orchestration
+import KubernetesIcon from "../../assets/SVG's/kubernetes-icon.svg"
+import DockerIcon from "../../assets/SVG's/docker-icon.svg"
+import AmazonEKSIcon from "../../assets/SVG's/amazon-eks-svgrepo-com.svg"
+//Infrastructure as Code(IaC)
+import AnsibleIcon from "../../assets/SVG's/Ansible-icon.svg"
+import TerraformIcon from "../../assets/SVG's/terraform-icon.svg"
+// Cloud
+import AWSIcon from "../../assets/SVG's/AWS-icon.svg"
+//Build
+import MavenIcon from "../../assets/SVG's/maven-svgrepo-com.svg"
+// Monitoring
+import PrometheusIcon from "../../assets/SVG's/prometheus.svg"
+import GrafanaIcon from "../../assets/SVG's/grafana.svg"
 
 const domains = [
-    {
-        title: 'DevOps',
-        tools: [
-            <img src={KubernetesIcon} alt="Kubernetes-icon" />,
-            <img src={DockerIcon} alt="Docker-icon" />,
-            <img src={AnsibleIcon} alt="Ansible-icon" />,
-            <img src={JenkinsIcon} alt="Jenkins-icon" />,
-            <img src={TerraformIcon} alt="Terraform-icon" />,
-            <img src={MavenIcon} alt="Maven-icon" />,
-            <img src={JFrogIcon} alt="JFrog-icon" />,
-            <img src={AmazonEKSIcon} alt="AmazonEKS-icon" />,
-            <img src={AWSIcon} alt="AWS-icon" />,
-        ],
-    },
     {
         title: 'Programming',
         tools: [
             <img src={PythonIcon} alt="Kubernetes-icon" />,
             <img src={JavaIcon} alt="Docker-icon" />,
+        ],
+    },
+    {
+        title: 'Version-Control',
+        tools: [
+            <img src={GitIcon} alt="Git-icon" />,
+            <img src={GitHubIcon} alt="GitHub-icon" />,
+        ],
+    },
+    {
+        title: 'CI-CD Automation',
+        tools: [
+            <img src={JenkinsIcon} alt="Jenkins-icon" />,
+            <img src={GitHubActionsIcon} alt="GitHub-Actions-icon" />,
+            <img src={GitLabIcon} alt="GitLab-icon" />,
+            <img src={ArgoCDIcon} alt="ArgoCD-icon" />,
+        ],
+    },
+    {
+        title: 'Containerisation and Orchestration',
+        tools: [
+            <img src={KubernetesIcon} alt="Kubernetes-icon" />,
+            <img src={DockerIcon} alt="Docker-icon" />,
+            <img src={AmazonEKSIcon} alt="AmazonEKS-icon" />,
+        ],
+    },
+    {
+        title: 'Infrastructure as Code(IaC)',
+        tools: [
+            <img src={AnsibleIcon} alt="Ansible-icon" />,
+            <img src={TerraformIcon} alt="Terraform-icon" />,
+        ],
+    },
+    {
+        title: 'Build',
+        tools: [
+            <img src={MavenIcon} alt="Maven-icon" />,
+        ],
+    },
+    {
+        title: 'Cloud Services',
+        tools: [
+            <img src={AWSIcon} alt="AWS-icon" />,
+        ],
+    },
+    {
+        title: 'Monitoring',
+        tools: [
+            <img src={PrometheusIcon} alt="Prometheus-icon" />,
+            <img src={GrafanaIcon} alt="Grafana-icon" />,
         ],
     },
 ]

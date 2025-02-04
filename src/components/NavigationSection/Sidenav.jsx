@@ -36,11 +36,11 @@ const Sidenav = () => {
                             <span className='pl-4'>Arsenal</span>
 
                         </a>
-                        {/* <a onClick={handleNav} href="#projects" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                        <a onClick={handleNav} href="#projects" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
                             <AiOutlineProject size={17} />
                             <span className='pl-4'>Project</span>
 
-                        </a> */}
+                        </a>
                         <a onClick={handleNav} href="#contact" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
                             <AiOutlineMail size={17} />
                             <span className='pl-4'>Contact</span>
@@ -65,9 +65,9 @@ const Sidenav = () => {
                     <a href="#arsenal" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <GrTechnology size={17}/>
                     </a>
-                    {/* <a href="#projects" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <a href="#projects" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <AiOutlineProject size={17}/>
-                    </a> */}
+                    </a>
                     <a href="#contact" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <AiOutlineMail size={17}/>
                     </a>

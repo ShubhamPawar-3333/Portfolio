@@ -139,41 +139,41 @@
 
 import React, { useState } from 'react';
 import Projectitem from './Projectitem';
-import projectImg1 from '../../assets/Emojify-data-set.jpg';
-import projectImg2 from '../../assets/housing-price-prediction.jpg';
-import projectImg3 from '../../assets/iris-flower-classification.jpg';
-import projectImg4 from '../../assets/stock-price-prediction-using-ML.jpg';
+import projectImg1 from '../../assets/Jenkins_setup_using_terraform.drawio.png';
+// import projectImg2 from '../../assets/housing-price-prediction.jpg';
+// import projectImg3 from '../../assets/iris-flower-classification.jpg';
+// import projectImg4 from '../../assets/stock-price-prediction-using-ML.jpg';
 
 // Sample project list with categories
 const projectList = [
   {
     img: projectImg1,
-    title: 'RenalNet',
+    title: 'Configuring Jenkins Using Terraform',
     description:
-      'Designed and developed a scalable and end-to-end machine learning pipeline to detect tumors in the kidney based on Kidney CT scans.',
-    category: 'Machine Learning',
+      'This project automates the setup of a Jenkins server using Terraform and a shell script, ensuring a quick and scalable deployment in cloud environments. It follows Infrastructure as Code (IaC) principles for easy provisioning, configuration, and management of Jenkins. Ideal for streamlining CI/CD workflows.',
+    category: 'DevOps',
   },
-  {
-    img: projectImg2,
-    title: 'Housing Price Prediction',
-    description:
-      'Implemented a machine learning model to predict housing prices based on various economic factors.',
-    category: 'Data Analysis',
-  },
-  {
-    img: projectImg3,
-    title: 'Iris Flower Classification',
-    description:
-      'Built a simple classification model to classify Iris flower species using Scikit-Learn.',
-    category: 'Machine Learning',
-  },
-  {
-    img: projectImg4,
-    title: 'Stock Price Prediction',
-    description:
-      'Developed a model to predict stock prices using machine learning algorithms.',
-    category: 'Data Analysis',
-  },
+  // {
+  //   img: projectImg2,
+  //   title: 'Housing Price Prediction',
+  //   description:
+  //     'Implemented a machine learning model to predict housing prices based on various economic factors.',
+  //   category: 'Data Analysis',
+  // },
+  // {
+  //   img: projectImg3,
+  //   title: 'Iris Flower Classification',
+  //   description:
+  //     'Built a simple classification model to classify Iris flower species using Scikit-Learn.',
+  //   category: 'Machine Learning',
+  // },
+  // {
+  //   img: projectImg4,
+  //   title: 'Stock Price Prediction',
+  //   description:
+  //     'Developed a model to predict stock prices using machine learning algorithms.',
+  //   category: 'Data Analysis',
+  // },
   // Add more projects with categories like 'DevOps', 'Web Development', etc.
 ];
 
@@ -192,7 +192,7 @@ const Projects = () => {
         <div className="w-14 mx-auto h-0.5 bg-red-500"></div>
       </div>
 
-      {/* Category filter menu */}
+      {/* Category filter menu
       <div className="hidden md:flex justify-center space-x-4 my-4">
         {['All', 'DevOps', 'Machine Learning', 'Data Analysis', 'Web Development'].map((category) => (
           <button
@@ -205,7 +205,7 @@ const Projects = () => {
             {category}
           </button>
         ))}
-      </div>
+      </div> */}
 
       {/* Project cards with smooth transition */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 py-6 transition-opacity duration-500 ease-in-out">

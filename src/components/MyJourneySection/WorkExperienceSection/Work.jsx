@@ -4,16 +4,16 @@ import Workitems from './Workitems'
 const data = [
     {   
         year: "Jul-21 - Jul-23",
-        title: 'DevOps Engineer',
+        title: 'Senior Analyst',
         duration: '2 Year',
         company: "Capgemini",
         details:
-        [
-          "Managed AWS infrastructure using Terraform, automating the provisioning of EC2 instances, S3 buckets, and IAM roles to streamline deployments.",
-          "Built and automated CI/CD pipelines with Jenkins, Dockerized application services, and deployed containers using Kubernetes for seamless scaling and availability.",
-          "Standardized deployments with Helm and configured Kubernetes Volumes for persistent storage, ensuring data integrity and simplified updates.",
-          "Monitored system health with Prometheus and Grafana, creating real-time dashboards and setting up AWS CloudWatch with SNS alerts for proactive issue resolution.",
-          "Documented CI/CD workflows, deployment processes, and infrastructure configurations to simplify troubleshooting and improve knowledge transfer.",
+        [ 
+          "Designed and implemented a fully automated CI/CD pipeline for a healthcare application, ensuring compliance, security, and reliability. Used Terraform to automate AWS infrastructure, managing EC2 instances, S3 storage, and IAM roles.",
+          "Configured Auto Scaling and Load Balancers to enhance application scalability and availability. Used Helm to simplify Kubernetes deployments and rollbacks for seamless application management.",
+          "Developed and deployed Docker containers, creating images for all services and managing their orchestration with Kubernetes to ensure high availability and scalability.",
+          "Integrated Prometheus, Grafana, and CloudWatch for real-time application monitoring, logging, and resource tracking. Configured SNS notifications for proactive incident management.",
+          "Automated OS and application security compliance updates using Ansible. Documented CI/CD workflows and deployment processes to improve operational efficiency and future scalability.",
       ]
     },
     // {   

@@ -11,8 +11,8 @@ const Projectitem = ({img, title, description}) => {
           <p className='text-sm my-2 font-base text-stone-600'> {description}</p>
         </div>
         <div>
-          <GithubButton />
-          <PreviewButton  desc="Live Preview"/>
+          <GithubButton link={"https://github.com/ShubhamPawar-3333/Configuring_Jenkins_Using_Terraform.git"}/>
+          {/* <PreviewButton  desc="Live Preview"/> */}
         </div>
       </div>
   )

@@ -4,6 +4,7 @@ import { HiOutlinePhone } from "react-icons/hi2"
 import { MdOutlineAttachEmail, MdOutlineLocationOn } from "react-icons/md"
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
+import ContactBG from '../../assets/contact-background.jpg'
 
 
 
@@ -31,7 +32,7 @@ const ContactSection = () => {
 
   return (
     <div id='contact' className='flex items-center justify-center'>
-        <div className='w-full min-h-screen bg-center bg-cover' style={{backgroundImage: "url(src/assets/contact-background.jpg)"}}>
+        <div className='w-full min-h-screen bg-center bg-cover' style={{backgroundImage: `url(${ContactBG})`}}>
             <div className='flex flex-col items-center justify-center min-h-screen max-w-[1040px] m-auto md:pl-20 p-4 py-5'>
               <div className='space-y-3 text-center mx-auto bg-white/80 rounded-xl'>
                 <h1 className='text-4xl font-bold text-center text-[#001b5e] p-2'>Get in touch</h1>
