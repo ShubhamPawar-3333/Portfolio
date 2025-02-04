@@ -2,7 +2,7 @@ import React from "react"
 
 const SkillCard = ({title, tools}) => {
     return (
-        <div className="flex flex-col md:flex-row items-center p-2">
+        <div className="flex flex-col md:flex-row items-center pt-2">
             <div 
                 className="flex items-center justify-around
                         w-[80%] md:w-[50%] p-3
@@ -17,7 +17,7 @@ const SkillCard = ({title, tools}) => {
                         rounded-xl ">
                 <ul className="flex flex-wrap space-x-3 space-y-3 items-center justify-evenly">
                     {tools.map((item, index) =>(
-                        <li className="h-12 w-12" key={index}>
+                        <li className="h-11 w-11" key={index}>
                             {item}
                         </li>
                     ))}

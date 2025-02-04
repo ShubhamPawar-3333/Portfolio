@@ -86,16 +86,16 @@ const domains = [
     },
 ]
 
-const softskills = [
-    "Communication and Collaboration",
-    "Understanding of Relevant Tools", 
-    "Automation Skills",
-    "Coding and Scripting",
-    "Cloud Skills",
-    "Customer-Focused Approach",
-    "Proactiveness",
-    "Passion For Learning",
-]
+// const softskills = [
+//     "Communication and Collaboration",
+//     "Understanding of Relevant Tools", 
+//     "Automation Skills",
+//     "Coding and Scripting",
+//     "Cloud Skills",
+//     "Customer-Focused Approach",
+//     "Proactiveness",
+//     "Passion For Learning",
+// ]
 
 const Arsenal = () =>{
     return (
@@ -112,7 +112,7 @@ const Arsenal = () =>{
                         tools={domain.tools}/>
                 ))}
             </div>
-            <h1 className='text-center w-[40%] py-3 font-bold shadow-xl shadow-gray-500 text-white bg-[#001b5e] rounded-full z-10'>Soft Skills</h1>
+            {/* <h1 className='text-center w-[40%] py-3 font-bold shadow-xl shadow-gray-500 text-white bg-[#001b5e] rounded-full z-10'>Soft Skills</h1>
             <div className="flex items-center justify-evenly
                         m-2 p-4
                         text-center"
@@ -122,7 +122,7 @@ const Arsenal = () =>{
                     <li className='flex items-center justify-center p-2 rounded-xl border-gray-400 focus:ring-0 focus:border-gray-400 shadow-lg border' key={item}>{item}</li>
                     ))}
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }
