@@ -17,7 +17,7 @@ import DockerIcon from "../../assets/SVG's/Docker-icon.svg"
 import AmazonEKSIcon from "../../assets/SVG's/amazon-eks-svgrepo-com.svg"
 //Infrastructure as Code(IaC)
 import AnsibleIcon from "../../assets/SVG's/Ansible-icon.svg"
-import TerraformIcon from "../../assets/SVG's/terraform-icon.svg"
+import TerraformIcon from "../../assets/SVG's/Terraform-icon.svg"
 // Cloud
 import AWSIcon from "../../assets/SVG's/AWS-icon.svg"
 //Build
