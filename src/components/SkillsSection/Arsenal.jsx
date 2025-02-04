@@ -13,7 +13,7 @@ import GitLabIcon from "../../assets/SVG's/gitlab-icon.svg"
 import ArgoCDIcon from "../../assets/SVG's/Argo-CD-icon.svg"
 //Containerisation and Orchestration
 import KubernetesIcon from "../../assets/SVG's/kubernetes-icon.svg"
-import DockerIcon from "../../assets/SVG's/docker-icon.svg"
+import DockerIcon from "../../assets/SVG's/Docker-icon.svg"
 import AmazonEKSIcon from "../../assets/SVG's/amazon-eks-svgrepo-com.svg"
 //Infrastructure as Code(IaC)
 import AnsibleIcon from "../../assets/SVG's/Ansible-icon.svg"
