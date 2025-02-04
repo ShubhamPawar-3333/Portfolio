@@ -72,7 +72,7 @@ const domains = [
         ],
     },
     {
-        title: 'Cloud Services',
+        title: 'Cloud Provider',
         tools: [
             <img src={AWSIcon} alt="AWS-icon" />,
         ],
