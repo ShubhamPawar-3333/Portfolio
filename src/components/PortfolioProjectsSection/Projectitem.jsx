@@ -24,7 +24,7 @@
   import PreviewButton from '../Buttons/PreviewButton'
   import GithubButton from '../Buttons/GithubButton'
   
-  const Projectitem = ({ img, title, description }) => {
+  const Projectitem = ({ img, title, description, link }) => {
     return (
       <div className='max-w-sm md:max-w-md lg:max-w-[95%] p-4 border border-gray-200 focus:ring-0 focus:border-gray-400 block rounded-xl transform transition-transform hover:scale-105 duration-300 shadow-lg hover:shadow-2xl'>
         <div className='flex flex-col lg:flex-row'>
@@ -38,7 +38,7 @@
             <h2 className='text-lg font-semibold text-[#001b5e]'>{title}</h2>
             <p className='text-sm my-2 font-base text-stone-600'>{description}</p>
             <div>
-              <GithubButton link={"https://github.com/ShubhamPawar-3333/Configuring_Jenkins_Using_Terraform.git"} />
+              <GithubButton link={link} />
               {/* <PreviewButton desc="Live Preview" /> */}
             </div>
           </div>

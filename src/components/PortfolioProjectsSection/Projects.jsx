@@ -227,13 +227,22 @@
 import React, { useState } from 'react';
 import Projectitem from './Projectitem';
 import projectImg1 from '../../assets/Jenkins_setup_using_terraform.drawio.png';
+import projectImg2 from '../../assets/Terraform-AWS-Infra-Setup.png';
 
 const projectList = [
+  {
+    img: projectImg2,
+    title: "Terraform AWS Multi-Environment Infrastructure Automation",
+    description: "This project provisions a scalable, multi-environment AWS infrastructure using Terraform and GitHub Actions, featuring a VPC with public/private subnets, a Bastion Host for secure access, and automated CI/CD pipelines. It follows Infrastructure as Code (IaC) principles, ensures cost-efficiency (~₹10-12 for a 2-hour test run), and demonstrates DevOps best practices for networking, security, and automation.",
+    link:"https://github.com/ShubhamPawar-3333/terraform-aws-infra-automation.git",
+    category: "DevOps"
+  },
   {
     img: projectImg1,
     title: 'Configuring Jenkins Using Terraform',
     description:
       'This project automates the setup of a Jenkins server using Terraform and a shell script, ensuring a quick and scalable deployment in cloud environments. It follows Infrastructure as Code (IaC) principles for easy provisioning, configuration, and management of Jenkins. Ideal for streamlining CI/CD workflows.',
+    link: "https://github.com/ShubhamPawar-3333/Configuring_Jenkins_Using_Terraform.git",
     category: 'DevOps',
   },
 ];
@@ -254,6 +263,7 @@ const Projects = () => {
             img={project.img}
             title={project.title}
             description={project.description}
+            link={project.link}
           />
         ))}
       </div>
