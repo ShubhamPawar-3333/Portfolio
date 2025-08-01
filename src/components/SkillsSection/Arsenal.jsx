@@ -26,9 +26,74 @@ import MavenIcon from "../../assets/SVG's/maven-svgrepo-com.svg"
 import PrometheusIcon from "../../assets/SVG's/prometheus.svg"
 import GrafanaIcon from "../../assets/SVG's/grafana.svg"
 
+import SpringIcon from "../../assets/SVG's/Spring.svg"
+import HibernateIcon from "../../assets/SVG's/Hibernate.svg"
+import KafkaIcon from "../../assets/SVG's/Apache-Kafka.svg"
+import PostmanIcon from "../../assets/SVG's/Postman.svg"
+import RedisIcon from "../../assets/SVG's/Redis.svg"
+import MongodbIcon from "../../assets/SVG's/MongoDB.svg"
+import PostgresIcon from "../../assets/SVG's/PostgresSQL.svg"
+
+
 const domains = [
     {
-        title: 'Programming',
+        title: 'Programming Languages',
+        tools: [
+            <img src={PythonIcon} alt="Kubernetes-icon" />,
+            <img src={JavaIcon} alt="Docker-icon" />,
+        ],
+    },
+    {
+        title: 'Version-Control and Build',
+        tools: [
+            <img src={GitIcon} alt="Git-icon" />,
+            <img src={GitHubIcon} alt="GitHub-icon" />,
+            <img src={MavenIcon} alt="Maven-icon" />,
+        ],
+    },
+    {
+        title: 'Backend',
+        tools: [
+            <img src={SpringIcon} alt="Spring-icon" />,
+            <img src={HibernateIcon} alt="Hibernate-icon" />,
+            <img src={KafkaIcon} alt="Kafka-icon" />,
+            <img src={PostmanIcon} alt="Postman-icon" />,
+            <img src={RedisIcon} alt="Redis-icon" />,
+        ],
+    },
+    {
+        title: 'Databases',
+        tools: [
+            <img src={MongodbIcon} alt="MongoBD-icon" />,
+            <img src={PostgresIcon} alt="PostgreSQL-icon" />,
+        ],
+    },
+    {
+        title: 'DevOps',
+        tools: [
+            <img src={KubernetesIcon} alt="Kubernetes-icon" />,
+            <img src={DockerIcon} alt="Docker-icon" />,
+            <img src={JenkinsIcon} alt="Jenkins-icon" />,
+            <img src={GitHubActionsIcon} alt="GitHub-Actions-icon" />,
+            <img src={GitLabIcon} alt="GitLab-icon" />,
+            <img src={ArgoCDIcon} alt="ArgoCD-icon" />,
+            <img src={AnsibleIcon} alt="Ansible-icon" />,
+            <img src={TerraformIcon} alt="Terraform-icon" />,
+            <img src={PrometheusIcon} alt="Prometheus-icon" />,
+            <img src={GrafanaIcon} alt="Grafana-icon" />,
+        ],
+    },
+    {
+        title: 'Cloud Provider',
+        tools: [
+            <img src={AWSIcon} alt="AWS-icon" />,
+        ],
+    },
+]
+/*
+const domains2 = [
+    {
+        title: 'Programming Languages',
         tools: [
             <img src={PythonIcon} alt="Kubernetes-icon" />,
             <img src={JavaIcon} alt="Docker-icon" />,
@@ -85,6 +150,7 @@ const domains = [
         ],
     },
 ]
+*/
 
 // const softskills = [
 //     "Communication and Collaboration",

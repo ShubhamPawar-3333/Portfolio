@@ -59,7 +59,7 @@ const ContactSection = () => {
                           <MdOutlineAttachEmail className='text-base mr-2'/> E-mail
                         </h2>
                         <p className='text-gray-700 text-sm font-medium'>
-                          shuubham.pawar.368@gmail.com
+                          shubhampawar1368@gmail.com
                         </p>
                       </div>
                       <div className='flex flex-col items-center md:items-start mb-6'>
@@ -68,7 +68,7 @@ const ContactSection = () => {
                           Location
                         </h2>
                         <p className='text-gray-700 text-sm font-medium'>
-                          New Delhi, Delhi-55
+                          Pune, Maharashtra
                         </p>
                       </div>
                     </address> 

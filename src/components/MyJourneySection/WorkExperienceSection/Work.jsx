@@ -3,17 +3,19 @@ import Workitems from './Workitems'
 
 const data = [
     {   
-        year: "Jul-21 - Jul-23",
-        title: 'Senior Analyst',
-        duration: '2 Year',
+        year: "Mar-21 - Jul-23",
+        title: 'Software Engineer',
+        duration: '2 Year 5 months',
         company: "Capgemini",
         details:
         [ 
-          "Designed and implemented a fully automated CI/CD pipeline for a healthcare application, ensuring compliance, security, and reliability. Used Terraform to automate AWS infrastructure, managing EC2 instances, S3 storage, and IAM roles.",
-          "Configured Auto Scaling and Load Balancers to enhance application scalability and availability. Used Helm to simplify Kubernetes deployments and rollbacks for seamless application management.",
-          "Developed and deployed Docker containers, creating images for all services and managing their orchestration with Kubernetes to ensure high availability and scalability.",
-          "Integrated Prometheus, Grafana, and CloudWatch for real-time application monitoring, logging, and resource tracking. Configured SNS notifications for proactive incident management.",
-          "Automated OS and application security compliance updates using Ansible. Documented CI/CD workflows and deployment processes to improve operational efficiency and future scalability.",
+          "Engineered scalable backend systems using Java, Spring Boot, and REST APIs within Agile environments to deliver robust software solutions.",
+          "Integrated Apache Kafka for real-time data streaming and Redis for caching to enhance system performance and reliability.",
+          "Implemented OAuth-based authentication mechanisms to strengthen application security and streamline user access control.",
+          "Optimized MySQL and SQL Server databases through efficient query design and stored procedures to ensure seamless data management.",
+          "Contributed to CI/CD pipelines utilizing Jenkins, Docker, and Kubernetes to enable efficient and reliable deployments.",
+          "Developed responsive front-end components using Angular, HTML, CSS, and JavaScript to create seamless user experiences.",
+          "Conducted code reviews and mentored junior developers to foster team collaboration and maintain high code quality standards.",
       ]
     },
     // {   

@@ -13,11 +13,24 @@ const AboutMe = () => {
           <div className="w-14 mx-auto h-0.5 bg-red-500"></div>
         </div>
         <div className='flex flex-col justify-center items-center m-10'>
-          <img src={ProfileImage} alt='Profile-image' className='h-[40%] sm:h-[30%] md:h-[20%] w-[40%] sm:w-[30%] md:w-[20%] rounded-full z-10 shadow-md shadow-slate-700'/>
+          <img src={ProfileImage} alt='Profile-image' className='h-[40%] sm:h-[30%] md:h-[20%] w-[40%] sm:w-[30%] md:w-[20%] rounded-full z-10 shadow-md shadow-slate-700' />
           <div className='text-center flex flex-col justify-around items-ceter m-4'>
-            <h1 className='text-xl font-bold text-[#001b5e]'>DevOps Engineer</h1>
-            <p className='p-2'>
-            As a skilled DevOps Engineer with 2 years of experience, I specialize in bridging the gap between development and operations. My expertise lies in automating workflows, optimizing systems, and streamlining processes to enhance efficiency and scalability. I am proficient in a wide range of tools and technologies, including Python, Docker, Kubernetes, AWS, and Jenkins, among others. Passionate about continuous learning and collaboration, I am always eager to connect with professionals in the field and explore innovative solutions together.
+            <h1 className='text-xl font-bold text-[#001b5e]'>Java Backend Developer</h1>
+            <p className='pt-2 pb-4'>
+              As a skilled Java Developer with over two years of experience, 
+              I specialize in crafting robust backend systems while integrating DevOps practices to enhance efficiency and scalability. 
+              <br/>My expertise includes 
+              Java, 
+              Spring Boot, 
+              Hibernate, 
+              Apache Kafka, 
+              and a strong command of DevOps tools such as 
+              Docker, 
+              Kubernetes, 
+              Jenkins, and 
+              Terraform. 
+              <br/>Passionate about continuous learning and collaboration, I am dedicated to delivering high-quality, 
+              innovative software solutions and connecting with like-minded professionals to drive technological excellence.
             </p>
             <div className='flex item-center justify-evenly'>
               <HireMeButton />
